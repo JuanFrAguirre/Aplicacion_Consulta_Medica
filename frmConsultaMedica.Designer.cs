@@ -144,11 +144,13 @@
             // rboMasculino
             // 
             this.rboMasculino.AutoSize = true;
+            this.rboMasculino.Checked = true;
             this.rboMasculino.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rboMasculino.Location = new System.Drawing.Point(47, 43);
             this.rboMasculino.Name = "rboMasculino";
             this.rboMasculino.Size = new System.Drawing.Size(192, 41);
             this.rboMasculino.TabIndex = 0;
+            this.rboMasculino.TabStop = true;
             this.rboMasculino.Text = "Masculino";
             this.rboMasculino.UseVisualStyleBackColor = true;
             // 
@@ -166,13 +168,11 @@
             // rboOtro
             // 
             this.rboOtro.AutoSize = true;
-            this.rboOtro.Checked = true;
             this.rboOtro.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rboOtro.Location = new System.Drawing.Point(47, 137);
             this.rboOtro.Name = "rboOtro";
             this.rboOtro.Size = new System.Drawing.Size(199, 41);
             this.rboOtro.TabIndex = 5;
-            this.rboOtro.TabStop = true;
             this.rboOtro.Text = "No Binario";
             this.rboOtro.UseVisualStyleBackColor = true;
             // 
@@ -305,9 +305,9 @@
             // 
             this.btnLimpiar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLimpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimpiar.Location = new System.Drawing.Point(666, 791);
+            this.btnLimpiar.Location = new System.Drawing.Point(633, 791);
             this.btnLimpiar.Name = "btnLimpiar";
-            this.btnLimpiar.Size = new System.Drawing.Size(307, 122);
+            this.btnLimpiar.Size = new System.Drawing.Size(349, 122);
             this.btnLimpiar.TabIndex = 11;
             this.btnLimpiar.TabStop = false;
             this.btnLimpiar.Text = "Limpiar Campos";
@@ -486,6 +486,7 @@
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label1);
             this.Name = "frmConsultaMedica";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Consulta Medica";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
