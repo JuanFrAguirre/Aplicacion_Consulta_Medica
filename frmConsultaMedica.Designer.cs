@@ -43,26 +43,26 @@
             this.label6 = new System.Windows.Forms.Label();
             this.dtpFechaConsulta = new System.Windows.Forms.DateTimePicker();
             this.label7 = new System.Windows.Forms.Label();
-            this.lblCantCardio = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.lblCantOdonto = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.lblCantPedia = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.lblPrecioProm = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-            this.lblEspecialidadMax = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
-            this.lblPorcCardio = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
-            this.lblPorcOdonto = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
-            this.lblPorcPedia = new System.Windows.Forms.Label();
             this.btnRegistrar = new System.Windows.Forms.Button();
             this.btnLimpiar = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
             this.lbl = new System.Windows.Forms.Label();
-            this.lblPrecioMax = new System.Windows.Forms.Label();
+            this.lblCantCardio = new System.Windows.Forms.TextBox();
+            this.lblCantOdonto = new System.Windows.Forms.TextBox();
+            this.lblCantPedia = new System.Windows.Forms.TextBox();
+            this.lblPrecioProm = new System.Windows.Forms.TextBox();
+            this.lblEspecialidadMax = new System.Windows.Forms.TextBox();
+            this.lblPorcOdonto = new System.Windows.Forms.TextBox();
+            this.lblPorcPedia = new System.Windows.Forms.TextBox();
+            this.lblPrecioMax = new System.Windows.Forms.TextBox();
+            this.lblPorcCardio = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -217,17 +217,6 @@
             this.label7.TabIndex = 0;
             this.label7.Text = "Cantidad Cardio";
             // 
-            // lblCantCardio
-            // 
-            this.lblCantCardio.AutoSize = true;
-            this.lblCantCardio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCantCardio.Location = new System.Drawing.Point(1413, 64);
-            this.lblCantCardio.Name = "lblCantCardio";
-            this.lblCantCardio.Size = new System.Drawing.Size(27, 37);
-            this.lblCantCardio.TabIndex = 0;
-            this.lblCantCardio.Text = "-";
-            this.lblCantCardio.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // label9
             // 
             this.label9.AutoSize = true;
@@ -237,17 +226,6 @@
             this.label9.Size = new System.Drawing.Size(261, 37);
             this.label9.TabIndex = 0;
             this.label9.Text = "Cantidad Odonto";
-            // 
-            // lblCantOdonto
-            // 
-            this.lblCantOdonto.AutoSize = true;
-            this.lblCantOdonto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCantOdonto.Location = new System.Drawing.Point(1413, 158);
-            this.lblCantOdonto.Name = "lblCantOdonto";
-            this.lblCantOdonto.Size = new System.Drawing.Size(27, 37);
-            this.lblCantOdonto.TabIndex = 0;
-            this.lblCantOdonto.Text = "-";
-            this.lblCantOdonto.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label11
             // 
@@ -259,17 +237,6 @@
             this.label11.TabIndex = 0;
             this.label11.Text = "Cantidad Pediatra";
             // 
-            // lblCantPedia
-            // 
-            this.lblCantPedia.AutoSize = true;
-            this.lblCantPedia.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCantPedia.Location = new System.Drawing.Point(1413, 246);
-            this.lblCantPedia.Name = "lblCantPedia";
-            this.lblCantPedia.Size = new System.Drawing.Size(27, 37);
-            this.lblCantPedia.TabIndex = 0;
-            this.lblCantPedia.Text = "-";
-            this.lblCantPedia.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // label13
             // 
             this.label13.AutoSize = true;
@@ -279,17 +246,6 @@
             this.label13.Size = new System.Drawing.Size(329, 37);
             this.label13.TabIndex = 0;
             this.label13.Text = "Precio Prom Consulta";
-            // 
-            // lblPrecioProm
-            // 
-            this.lblPrecioProm.AutoSize = true;
-            this.lblPrecioProm.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPrecioProm.Location = new System.Drawing.Point(1414, 326);
-            this.lblPrecioProm.Name = "lblPrecioProm";
-            this.lblPrecioProm.Size = new System.Drawing.Size(27, 37);
-            this.lblPrecioProm.TabIndex = 0;
-            this.lblPrecioProm.Text = "-";
-            this.lblPrecioProm.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label15
             // 
@@ -301,17 +257,6 @@
             this.label15.TabIndex = 0;
             this.label15.Text = "Especialidad Consulta Mas Cara";
             // 
-            // lblEspecialidadMax
-            // 
-            this.lblEspecialidadMax.AutoSize = true;
-            this.lblEspecialidadMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEspecialidadMax.Location = new System.Drawing.Point(1414, 417);
-            this.lblEspecialidadMax.Name = "lblEspecialidadMax";
-            this.lblEspecialidadMax.Size = new System.Drawing.Size(27, 37);
-            this.lblEspecialidadMax.TabIndex = 0;
-            this.lblEspecialidadMax.Text = "-";
-            this.lblEspecialidadMax.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // label17
             // 
             this.label17.AutoSize = true;
@@ -321,17 +266,6 @@
             this.label17.Size = new System.Drawing.Size(273, 37);
             this.label17.TabIndex = 0;
             this.label17.Text = "Porcentaje Cardio";
-            // 
-            // lblPorcCardio
-            // 
-            this.lblPorcCardio.AutoSize = true;
-            this.lblPorcCardio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPorcCardio.Location = new System.Drawing.Point(1414, 566);
-            this.lblPorcCardio.Name = "lblPorcCardio";
-            this.lblPorcCardio.Size = new System.Drawing.Size(27, 37);
-            this.lblPorcCardio.TabIndex = 0;
-            this.lblPorcCardio.Text = "-";
-            this.lblPorcCardio.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label19
             // 
@@ -343,17 +277,6 @@
             this.label19.TabIndex = 0;
             this.label19.Text = "Porcentaje Odonto";
             // 
-            // lblPorcOdonto
-            // 
-            this.lblPorcOdonto.AutoSize = true;
-            this.lblPorcOdonto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPorcOdonto.Location = new System.Drawing.Point(1414, 649);
-            this.lblPorcOdonto.Name = "lblPorcOdonto";
-            this.lblPorcOdonto.Size = new System.Drawing.Size(27, 37);
-            this.lblPorcOdonto.TabIndex = 0;
-            this.lblPorcOdonto.Text = "-";
-            this.lblPorcOdonto.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // label21
             // 
             this.label21.AutoSize = true;
@@ -363,17 +286,6 @@
             this.label21.Size = new System.Drawing.Size(259, 37);
             this.label21.TabIndex = 0;
             this.label21.Text = "Porcentaje Pedia";
-            // 
-            // lblPorcPedia
-            // 
-            this.lblPorcPedia.AutoSize = true;
-            this.lblPorcPedia.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPorcPedia.Location = new System.Drawing.Point(1414, 730);
-            this.lblPorcPedia.Name = "lblPorcPedia";
-            this.lblPorcPedia.Size = new System.Drawing.Size(27, 37);
-            this.lblPorcPedia.TabIndex = 0;
-            this.lblPorcPedia.Text = "-";
-            this.lblPorcPedia.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnRegistrar
             // 
@@ -418,22 +330,101 @@
             this.lbl.TabIndex = 0;
             this.lbl.Text = "Precio Consulta Mas Cara";
             // 
+            // lblCantCardio
+            // 
+            this.lblCantCardio.Enabled = false;
+            this.lblCantCardio.Location = new System.Drawing.Point(1353, 69);
+            this.lblCantCardio.Name = "lblCantCardio";
+            this.lblCantCardio.Size = new System.Drawing.Size(197, 31);
+            this.lblCantCardio.TabIndex = 12;
+            this.lblCantCardio.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // lblCantOdonto
+            // 
+            this.lblCantOdonto.Enabled = false;
+            this.lblCantOdonto.Location = new System.Drawing.Point(1353, 159);
+            this.lblCantOdonto.Name = "lblCantOdonto";
+            this.lblCantOdonto.Size = new System.Drawing.Size(197, 31);
+            this.lblCantOdonto.TabIndex = 12;
+            this.lblCantOdonto.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // lblCantPedia
+            // 
+            this.lblCantPedia.Enabled = false;
+            this.lblCantPedia.Location = new System.Drawing.Point(1353, 252);
+            this.lblCantPedia.Name = "lblCantPedia";
+            this.lblCantPedia.Size = new System.Drawing.Size(197, 31);
+            this.lblCantPedia.TabIndex = 12;
+            this.lblCantPedia.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // lblPrecioProm
+            // 
+            this.lblPrecioProm.Enabled = false;
+            this.lblPrecioProm.Location = new System.Drawing.Point(1353, 332);
+            this.lblPrecioProm.Name = "lblPrecioProm";
+            this.lblPrecioProm.Size = new System.Drawing.Size(197, 31);
+            this.lblPrecioProm.TabIndex = 12;
+            this.lblPrecioProm.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // lblEspecialidadMax
+            // 
+            this.lblEspecialidadMax.Enabled = false;
+            this.lblEspecialidadMax.Location = new System.Drawing.Point(1353, 423);
+            this.lblEspecialidadMax.Name = "lblEspecialidadMax";
+            this.lblEspecialidadMax.Size = new System.Drawing.Size(197, 31);
+            this.lblEspecialidadMax.TabIndex = 12;
+            this.lblEspecialidadMax.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // lblPorcOdonto
+            // 
+            this.lblPorcOdonto.Enabled = false;
+            this.lblPorcOdonto.Location = new System.Drawing.Point(1353, 655);
+            this.lblPorcOdonto.Name = "lblPorcOdonto";
+            this.lblPorcOdonto.Size = new System.Drawing.Size(197, 31);
+            this.lblPorcOdonto.TabIndex = 12;
+            this.lblPorcOdonto.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // lblPorcPedia
+            // 
+            this.lblPorcPedia.Enabled = false;
+            this.lblPorcPedia.Location = new System.Drawing.Point(1353, 736);
+            this.lblPorcPedia.Name = "lblPorcPedia";
+            this.lblPorcPedia.Size = new System.Drawing.Size(197, 31);
+            this.lblPorcPedia.TabIndex = 12;
+            this.lblPorcPedia.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // lblPrecioMax
             // 
-            this.lblPrecioMax.AutoSize = true;
-            this.lblPrecioMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPrecioMax.Location = new System.Drawing.Point(1413, 485);
+            this.lblPrecioMax.Enabled = false;
+            this.lblPrecioMax.Location = new System.Drawing.Point(1353, 491);
             this.lblPrecioMax.Name = "lblPrecioMax";
-            this.lblPrecioMax.Size = new System.Drawing.Size(27, 37);
-            this.lblPrecioMax.TabIndex = 0;
-            this.lblPrecioMax.Text = "-";
-            this.lblPrecioMax.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblPrecioMax.Size = new System.Drawing.Size(197, 31);
+            this.lblPrecioMax.TabIndex = 12;
+            this.lblPrecioMax.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // lblPorcCardio
+            // 
+            this.lblPorcCardio.Enabled = false;
+            this.lblPorcCardio.Location = new System.Drawing.Point(1353, 573);
+            this.lblPorcCardio.Name = "lblPorcCardio";
+            this.lblPorcCardio.Size = new System.Drawing.Size(197, 31);
+            this.lblPorcCardio.TabIndex = 12;
+            this.lblPorcCardio.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // frmConsultaMedica
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1614, 959);
+            this.Controls.Add(this.lblPorcCardio);
+            this.Controls.Add(this.lblPrecioMax);
+            this.Controls.Add(this.lblPorcPedia);
+            this.Controls.Add(this.lblPorcOdonto);
+            this.Controls.Add(this.lblEspecialidadMax);
+            this.Controls.Add(this.lblPrecioProm);
+            this.Controls.Add(this.lblCantPedia);
+            this.Controls.Add(this.lblCantOdonto);
+            this.Controls.Add(this.lblCantCardio);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.btnRegistrar);
@@ -450,14 +441,6 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.lblPorcPedia);
-            this.Controls.Add(this.lblPorcOdonto);
-            this.Controls.Add(this.lblPorcCardio);
-            this.Controls.Add(this.lblPrecioMax);
-            this.Controls.Add(this.lblEspecialidadMax);
-            this.Controls.Add(this.lblPrecioProm);
-            this.Controls.Add(this.lblCantPedia);
-            this.Controls.Add(this.lblCantOdonto);
             this.Controls.Add(this.label21);
             this.Controls.Add(this.label19);
             this.Controls.Add(this.label17);
@@ -466,7 +449,6 @@
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.lblCantCardio);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label1);
             this.Name = "frmConsultaMedica";
@@ -493,26 +475,26 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.DateTimePicker dtpFechaConsulta;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label lblCantCardio;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label lblCantOdonto;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label lblCantPedia;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label lblPrecioProm;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label lblEspecialidadMax;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label lblPorcCardio;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label lblPorcOdonto;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label lblPorcPedia;
         private System.Windows.Forms.Button btnRegistrar;
         private System.Windows.Forms.Button btnLimpiar;
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.Label lbl;
-        private System.Windows.Forms.Label lblPrecioMax;
+        private System.Windows.Forms.TextBox lblCantCardio;
+        private System.Windows.Forms.TextBox lblCantOdonto;
+        private System.Windows.Forms.TextBox lblCantPedia;
+        private System.Windows.Forms.TextBox lblPrecioProm;
+        private System.Windows.Forms.TextBox lblEspecialidadMax;
+        private System.Windows.Forms.TextBox lblPorcOdonto;
+        private System.Windows.Forms.TextBox lblPorcPedia;
+        private System.Windows.Forms.TextBox lblPrecioMax;
+        private System.Windows.Forms.TextBox lblPorcCardio;
     }
 }
 

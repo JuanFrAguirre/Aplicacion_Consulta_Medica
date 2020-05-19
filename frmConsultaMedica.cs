@@ -136,13 +136,13 @@ namespace Stream_18_05
             lblCantOdonto.Text = cantOdonto.ToString();
             lblCantPedia.Text = cantPediatra.ToString();
 
-            lblPrecioProm.Text = promPrecio.ToString();
-            lblPrecioMax.Text = precioMax.ToString();
+            lblPrecioProm.Text = "$" + promPrecio.ToString();
+            lblPrecioMax.Text = "$" + precioMax.ToString();
             lblEspecialidadMax.Text = stringEspecialidadMax;
 
-            lblPorcCardio.Text = porcCardio.ToString();
-            lblPorcOdonto.Text = porcOdonto.ToString();
-            lblPorcPedia.Text = porcPedia.ToString();
+            lblPorcCardio.Text = porcCardio.ToString() + "%";
+            lblPorcOdonto.Text = porcOdonto.ToString() + "%";
+            lblPorcPedia.Text = porcPedia.ToString() + "%";
 
             // ------------------------------------------------------------------
             // Mensaje Final Datos

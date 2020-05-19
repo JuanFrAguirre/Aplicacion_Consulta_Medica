@@ -85,13 +85,16 @@ namespace Stream_18_05
 
 
 
-            string mensaje = $"---------------------------------\n" +
+            string mensaje = $"REGISTRO EXITOSO!\n" +
+                $"---------------------------------\n" +
+                $"Datos del registro:\n" +
                 $"Matricula: {Matricula}\n" +
                 $"Nombre: {Nombre}\n" +
                 $"Genero: {generoSeleccionado}\n" +
                 $"Especialidad: {especialidadSeleccionada}\n" +
                 $"Precio: {Precio}\n" +
-                $"Fecha: {FechaString}";
+                $"Fecha: {FechaString}\n" +
+                $"---------------------------------";
             return mensaje;
         }
 
