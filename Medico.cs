@@ -48,50 +48,36 @@ namespace Stream_18_05
         // -------------------------------------------------
         //  metodos
 
-        public string MostrarDatos()
-        {
-            string generoSeleccionado;
-            string especialidadSeleccionada;
 
+        public string GetGenero()
+        {
             switch (Genero)
             {
-                case 1: 
-                    generoSeleccionado = "Masculino";
-                    break;
-                case 2:
-                    generoSeleccionado = "Femenino";
-                    break;                
-                default: generoSeleccionado = "No binario";
-                    break;
+                case 1: return "Masculino";
+                case 2: return "Femenino";
+                default: return "No binario";
             }
+        }
 
-
-            switch (Especialidad)
+        public string CalcularEspecialidad(int genero)
+        {
+            switch (genero)
             {
-                case 1:
-                    especialidadSeleccionada = "Cardiologia";
-                    break;
-                case 2:
-                    especialidadSeleccionada = "Odontologia";
-                    break;
-                case 3:
-                    especialidadSeleccionada = "Pediatria";
-                    break;
-                default:
-                    especialidadSeleccionada = "No seleccionado";
-                    break;
+                case 1: return "Cardiologia";
+                case 2: return "Odontologia";
+                default: return "Pediatria";
             }
+        }
 
-
-
-
+        public string MostrarDatos()
+        {
             string mensaje = $"REGISTRO EXITOSO!\n" +
                 $"---------------------------------\n" +
                 $"Datos del registro:\n" +
                 $"Matricula: {Matricula}\n" +
                 $"Nombre: {Nombre}\n" +
-                $"Genero: {generoSeleccionado}\n" +
-                $"Especialidad: {especialidadSeleccionada}\n" +
+                $"Genero: {GetGenero()}\n" +
+                $"Especialidad: {CalcularEspecialidad(Especialidad)}\n" +
                 $"Precio: {Precio}\n" +
                 $"Fecha: {FechaString}\n" +
                 $"---------------------------------";

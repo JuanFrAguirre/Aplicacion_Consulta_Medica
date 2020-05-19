@@ -109,20 +109,6 @@ namespace Stream_18_05
                 }
             }
 
-            string stringEspecialidadMax;
-
-            switch (especialidadMax)
-            {
-                case 1: stringEspecialidadMax = "Cardiologia";
-                    break;
-                case 2:
-                    stringEspecialidadMax = "Odontologia";
-                    break;
-                default:
-                    stringEspecialidadMax = "Pediatria";
-                    break;
-            }
-
             // calculo de porcentajes
 
             porcCardio = (100 * cantCardio) / cantConsultas;
@@ -138,7 +124,7 @@ namespace Stream_18_05
 
             lblPrecioProm.Text = "$" + promPrecio.ToString();
             lblPrecioMax.Text = "$" + precioMax.ToString();
-            lblEspecialidadMax.Text = stringEspecialidadMax;
+            lblEspecialidadMax.Text = drHouse.CalcularEspecialidad(especialidadMax);
 
             lblPorcCardio.Text = porcCardio.ToString() + "%";
             lblPorcOdonto.Text = porcOdonto.ToString() + "%";
