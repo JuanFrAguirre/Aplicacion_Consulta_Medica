@@ -84,5 +84,10 @@ namespace Stream_18_05
             return mensaje;
         }
 
+        public static double ElevarAlCuadrado(double numero, int potencia)
+        {
+            return Math.Pow(numero, potencia);
+        }
+
     }
 }

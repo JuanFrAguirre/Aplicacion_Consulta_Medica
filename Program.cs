@@ -18,5 +18,10 @@ namespace Stream_18_05
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new frmConsultaMedica());
         }
+
+        
+
     }
+
+    
 }

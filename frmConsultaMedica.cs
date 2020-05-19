@@ -17,23 +17,21 @@ namespace Stream_18_05
             InitializeComponent();
         }
 
-        int cantCardio = 0;
-        int cantOdonto = 0;
-        int cantPediatra = 0;
+        private int cantCardio = 0;
+        private int cantOdonto = 0;
+        private int cantPediatra = 0;
 
-        int cantConsultas = 0;
-        double acuPrecios = 0;
-        double promPrecio = 0;
+        private int cantConsultas = 0;
+        private double acuPrecios = 0;
+        private double promPrecio = 0;
 
-        int especialidadMax = 0;
-        double precioMax = 0;
-        bool flag = true;
+        private int especialidadMax = 0;
+        private double precioMax = 0;
+        private bool flag = true;
 
-        double porcCardio = 0;
-        double porcOdonto = 0;
-        double porcPedia = 0;
-
-
+        private double porcCardio = 0;
+        private double porcOdonto = 0;
+        private double porcPedia = 0;
 
         // boton calcular/registrar
         private void btnRegistrar_Click(object sender, EventArgs e)
@@ -44,13 +42,11 @@ namespace Stream_18_05
             int textoMatricula = int.Parse(txtMatricula.Text);
 
             string textoNombre = txtNombre.Text;
-            
+
             int sGenero;
 
             if (rboMasculino.Checked) sGenero = 1;
-
             else if (rboFemenino.Checked) sGenero = 2;
-
             else sGenero = 3;
 
             int comboEspecialidad = cboEspecialidad.SelectedIndex + 1;
@@ -59,26 +55,25 @@ namespace Stream_18_05
 
             string fechaConsulta = dtpFechaConsulta.Value.ToShortDateString();
 
-
             // ------------------------------------------------------------------
             // instancia de clase
 
             Medico drHouse = new Medico(textoMatricula, textoNombre, sGenero, comboEspecialidad, textoPrecio, fechaConsulta);
 
-
             // ------------------------------------------------------------------
             // Calculos de datos
-
 
             // calculos de contadores de especialidades
             switch (comboEspecialidad)
             {
-                case 1: 
+                case 1:
                     cantCardio++;
                     break;
+
                 case 2:
                     cantOdonto++;
                     break;
+
                 default:
                     cantPediatra++;
                     break;
@@ -90,7 +85,7 @@ namespace Stream_18_05
 
             acuPrecios += textoPrecio;
 
-            promPrecio = Math.Round((acuPrecios / cantConsultas),2);
+            promPrecio = Math.Round((acuPrecios / cantConsultas), 2);
 
             // calculo de precio y especialidad de la consulta mas cara
 
@@ -133,11 +128,8 @@ namespace Stream_18_05
             // ------------------------------------------------------------------
             // Mensaje Final Datos
 
-
             MessageBox.Show(drHouse.MostrarDatos());
-
         }
-
 
         // boton limpiar campos
         private void btnLimpiar_Click(object sender, EventArgs e)
@@ -149,7 +141,6 @@ namespace Stream_18_05
             txtPrecioConsulta.Text = "";
             dtpFechaConsulta.Value = DateTime.Today;
         }
-
 
         // boton salir
         private void btnSalir_Click(object sender, EventArgs e)
